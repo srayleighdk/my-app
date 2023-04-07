@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
             />
           </div>
         </div>
-        <div class="bg-amber-200 h-10 text-center py-2 text-[#00644b] font-bold">
+        <div className="bg-amber-200 h-10 text-center py-2 text-[#00644b] font-bold">
           This is a full-width div with a yellow background color and centered
           text.
         </div>
