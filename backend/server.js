@@ -13,7 +13,7 @@ app.use(cors());
 
 // Define a route handler for the root path
 app.get('/', (req, res) => {
-  res.send('Hello from the backend!');
+  res.send('Hello from the backend! Test');
 });
 
 // Start the server on the specified port
