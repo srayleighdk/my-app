@@ -1,5 +1,6 @@
 // Import the necessary dependencies
 const express = require('express');
+const connection = require('./config/db');
 const cors = require('cors');
 require('dotenv').config;
 
