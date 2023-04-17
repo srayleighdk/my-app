@@ -1,15 +1,8 @@
 import "./globals.css";
-import Image from "next/image";
-import Link from "next/link";
-
 // Components
-import BoxSearch from "./components/BoxSearch/BoxSearch";
-
+import Header from "./components/Layout/Header";
+import Footer from "./components/Layout/Footer";
 //Image
-import logoText from "../public/images/new-logo.webp";
-import logo from "../public/images/HPS-corelogo-a.webp";
-import iconMenu from "../public/images/bars-solid.svg";
-import iconCart from "../public/images/cart-shopping-solid.svg"
 
 export const metadata = {
   title: "Create Next App",
@@ -20,30 +13,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <div className="header">
-          <section>
-            <div className="bg-[#00644b] flex justify-around p-4 ">
-              <Image src={logoText} alt="LogoText" width={150} height={150}/>
-              <Image src={logo} alt="Logo" width={150} height={150}/>
-            </div>
-          </section>
-          <section>
-            <p className="bg-[#dadd28] text-[#00644b] font-semibold text-center px-1 py-2">30% New Arrivals! Use code: NEWNEW20 | FREE Shipping on all Orders!</p>
-          </section>
-          <section>
-            <div className="bg-[#00644b] flex justify-between content-center p-1 py-2">
-              <Image src={iconMenu} alt="Icon Menu" width={30} height={30} className="pl-1"/>
-              <Image src={logo} alt="Logo" width={200} height={200}/>
-              <Image src={iconCart} alt="Cart" width={30} height={30} className="pr-1"/>
-            </div>
-            <div className="search-box">
-              <BoxSearch/>
-            </div>
-          </section>
-        </div>
+        <Header />
         {children}
-        <div className="footer">
-        </div>
+        <Footer />
       </body>
     </html>
   );

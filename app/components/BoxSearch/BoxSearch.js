@@ -13,7 +13,7 @@ const BoxSearch = () => {
   };
 
   return (
-    <div className="bg-primaryColor px-3 pb-3">
+    <div className="bg-primaryColor px-1 pb-3">
       <div className='relative'>
         <input
           type="text"
